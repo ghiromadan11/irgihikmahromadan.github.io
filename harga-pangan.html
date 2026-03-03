@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Detail Proyek - Dashboard Harga Pangan</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Inter',sans-serif;
+}
+
+body{
+    background:#f1f5f9;
+    color:#1e293b;
+    line-height:1.8;
+}
+
+.container{
+    width:90%;
+    max-width:950px;
+    margin:auto;
+}
+
+section{
+    padding:70px 0;
+}
+
+h1{
+    font-size:34px;
+    margin-bottom:15px;
+    color:#1e3a8a;
+}
+
+h2{
+    margin:40px 0 15px 0;
+    font-size:22px;
+    color:#0f172a;
+}
+
+p{
+    margin-bottom:15px;
+    color:#475569;
+}
+
+ul{
+    padding-left:20px;
+    color:#475569;
+}
+
+li{
+    margin-bottom:8px;
+}
+
+/* Back Button */
+.back-btn{
+    display:inline-block;
+    margin-bottom:35px;
+    padding:10px 22px;
+    background:#0ea5e9;
+    color:white;
+    border-radius:8px;
+    text-decoration:none;
+    font-weight:500;
+    transition:0.3s;
+}
+
+.back-btn:hover{
+    background:#0284c7;
+}
+
+/* Info Box */
+.info-box{
+    background:white;
+    padding:25px;
+    border-radius:14px;
+    margin:25px 0 35px 0;
+    box-shadow:0 10px 25px rgba(0,0,0,0.05);
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:20px;
+}
+
+.info-item strong{
+    display:block;
+    font-size:14px;
+    color:#64748b;
+    margin-bottom:5px;
+}
+
+.info-item span{
+    font-weight:600;
+    color:#1e293b;
+}
+
+/* Gallery */
+.gallery{
+    margin-top:20px;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.gallery img{
+    width:100%;
+    height:210px;
+    object-fit:cover;
+    border-radius:14px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.08);
+    transition:0.3s ease;
+    cursor:pointer;
+}
+
+.gallery img:hover{
+    transform:scale(1.04);
+}
+
+/* Modal */
+.modal{
+    display:none;
+    position:fixed;
+    z-index:999;
+    padding-top:60px;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+    background-color:rgba(0,0,0,0.85);
+}
+
+.modal-content{
+    display:block;
+    margin:auto;
+    max-width:80%;
+    max-height:80vh;
+    border-radius:12px;
+    animation:zoom 0.3s ease;
+}
+
+@keyframes zoom{
+    from{transform:scale(0.7);}
+    to{transform:scale(1);}
+}
+
+.close{
+    position:absolute;
+    top:30px;
+    right:40px;
+    color:#fff;
+    font-size:35px;
+    font-weight:bold;
+    cursor:pointer;
+}
+</style>
+</head>
+
+<body>
+
+<section>
+<div class="container">
+
+<a href="saya.html" class="back-btn">← Kembali ke Portofolio</a>
+
+<h1>Dashboard Pemantauan Harga Pangan (Early Warning System)</h1>
+
+<div class="info-box">
+    <div class="info-item">
+        <strong>Peran</strong>
+        <span>Fullstack Web Developer</span>
+    </div>
+
+    <div class="info-item">
+        <strong>Teknologi</strong>
+        <span>CodeIgniter 4, Chart.js, AJAX, MySQL</span>
+    </div>
+
+    <div class="info-item">
+        <strong>Tahun</strong>
+        <span>2025</span>
+    </div>
+</div>
+
+<h2>Deskripsi Proyek</h2>
+<p>
+Sistem ini merupakan Early Warning System berbasis web 
+yang digunakan untuk memantau harga komoditas pangan secara real-time.
+Dashboard menampilkan grafik interaktif dan riwayat harga 
+berdasarkan wilayah dan tanggal input.
+</p>
+
+<h2>Fitur Utama</h2>
+<ul>
+<li>Input dan update harga komoditas</li>
+<li>Grafik batang harga berdasarkan riwayat input</li>
+<li>Status tren harga (Naik / Turun / Stabil)</li>
+<li>Dashboard admin, Kepala, dan user</li>
+<li>Popup grafik interaktif menggunakan Chart.js</li>
+</ul>
+
+<h2>Tanggung Jawab Saya</h2>
+<ul>
+<li>Merancang struktur database</li>
+<li>Mengembangkan backend menggunakan CodeIgniter 4</li>
+<li>Mengimplementasikan AJAX untuk pengambilan data grafik</li>
+<li>Mengintegrasikan Chart.js untuk visualisasi data</li>
+<li>Mendesain UI modern dan responsif</li>
+</ul>
+
+<h2>Hasil & Dampak</h2>
+<p>
+Sistem ini membantu monitoring harga pangan menjadi lebih cepat, 
+akurat, dan informatif. Visualisasi grafik mempermudah 
+analisis tren harga untuk pengambilan keputusan.
+</p>
+
+<h2>Screenshot Sistem</h2>
+
+<div class="gallery">
+    <img src="images/harga-pangan/dashboard_public.png" alt="Dashboard Utama">
+    <img src="images/harga-pangan/diagram_harga.png" alt="Form Input Harga">
+    <img src="images/harga-pangan/diagram_kpl.png" alt="Grafik Harga">
+    <img src="images/harga-pangan/filter_harga.png" alt="Grafik Harga">
+    <img src="images/harga-pangan/input_komoditas.png" alt="Grafik Harga">
+    <img src="images/harga-pangan/login_adm.png" alt="Grafik Harga">
+    <img src="images/harga-pangan/login_kpl.png" alt="Grafik Harga">
+    <img src="images/harga-pangan/riwayat_admin.png" alt="Grafik Harga">
+    <img src="images/harga-pangan/unduh_data.png" alt="Grafik Harga">
+    <img src="images/harga-pangan/unduh_kpl.png" alt="Grafik Harga">
+</div>
+
+<!-- IMAGE MODAL -->
+<div id="imageModal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="modalImg">
+</div>
+
+</div>
+</section>
+
+<script>
+const modal = document.getElementById("imageModal");
+const modalImg = document.getElementById("modalImg");
+const closeBtn = document.querySelector(".close");
+
+document.querySelectorAll(".gallery img").forEach(img => {
+    img.addEventListener("click", function(){
+        modal.style.display = "block";
+        modalImg.src = this.src;
+    });
+});
+
+closeBtn.onclick = function() {
+    modal.style.display = "none";
+}
+
+modal.onclick = function(e) {
+    if(e.target === modal){
+        modal.style.display = "none";
+    }
+}
+</script>
+
+</body>
+</html>

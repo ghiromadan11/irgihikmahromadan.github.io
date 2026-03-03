@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Detail Proyek - RS Assyifa</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Inter',sans-serif;
+}
+
+body{
+    background:#f1f5f9;
+    color:#1e293b;
+    line-height:1.8;
+}
+
+.container{
+    width:90%;
+    max-width:950px;
+    margin:auto;
+}
+
+section{
+    padding:70px 0;
+}
+
+h1{
+    font-size:34px;
+    margin-bottom:15px;
+    color:#1e3a8a;
+}
+
+h2{
+    margin:40px 0 15px 0;
+    font-size:22px;
+    color:#0f172a;
+}
+
+p{
+    margin-bottom:15px;
+    color:#475569;
+}
+
+ul{
+    padding-left:20px;
+    color:#475569;
+}
+
+li{
+    margin-bottom:8px;
+}
+
+/* Back Button */
+.back-btn{
+    display:inline-block;
+    margin-bottom:35px;
+    padding:10px 22px;
+    background:#0ea5e9;
+    color:white;
+    border-radius:8px;
+    text-decoration:none;
+    font-weight:500;
+    transition:0.3s;
+}
+
+.back-btn:hover{
+    background:#0284c7;
+}
+
+/* Info Box */
+.info-box{
+    background:white;
+    padding:25px;
+    border-radius:14px;
+    margin:25px 0 35px 0;
+    box-shadow:0 10px 25px rgba(0,0,0,0.05);
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:20px;
+}
+
+.info-item strong{
+    display:block;
+    font-size:14px;
+    color:#64748b;
+    margin-bottom:5px;
+}
+
+.info-item span{
+    font-weight:600;
+    color:#1e293b;
+}
+
+/* Gallery */
+.gallery{
+    margin-top:20px;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.gallery img{
+    width:100%;
+    height:210px;
+    object-fit:cover;
+    border-radius:14px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.08);
+    transition:0.3s ease;
+    cursor:pointer;
+}
+
+.gallery img:hover{
+    transform:scale(1.04);
+}
+
+/* Modal Background */
+.modal{
+    display:none;
+    position:fixed;
+    z-index:999;
+    padding-top:60px;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+    overflow:auto;
+    background-color:rgba(0,0,0,0.85);
+}
+
+/* Modal Image */
+.modal-content{
+    display:block;
+    margin:auto;
+    max-width:80%;
+    max-height:80vh;
+    border-radius:12px;
+    animation:zoom 0.3s ease;
+}
+
+/* Animation */
+@keyframes zoom{
+    from{transform:scale(0.7);}
+    to{transform:scale(1);}
+}
+
+/* Close Button */
+.close{
+    position:absolute;
+    top:30px;
+    right:40px;
+    color:#fff;
+    font-size:35px;
+    font-weight:bold;
+    cursor:pointer;
+}
+</style>
+</head>
+
+<body>
+
+<section>
+<div class="container">
+
+<a href="saya.html" class="back-btn">← Kembali ke Portofolio</a>
+
+<h1>Analisis Penerapan Sistem Absensi Pegawai Berbasis Website 
+RS Assyifa Kota Sukabumi</h1>
+
+<div class="info-box">
+    <div class="info-item">
+        <strong>Peran</strong>
+        <span>System Analyst (PKL)</span>
+    </div>
+
+    <div class="info-item">
+        <strong>Metodologi</strong>
+        <span>Observasi, Wawancara, Analisis PIECES</span>
+    </div>
+
+    <div class="info-item">
+        <strong>Tahun</strong>
+        <span>2025</span>
+    </div>
+</div>
+
+<h2>Latar Belakang</h2>
+<p>
+RS Assyifa Kota Sukabumi telah menggunakan sistem absensi berbasis website 
+untuk mengelola kehadiran pegawai. Namun, diperlukan analisis untuk 
+mengevaluasi efektivitas sistem dalam mendukung proses pencatatan, 
+pengolahan data, serta pelaporan absensi secara akurat dan efisien.
+</p>
+
+<h2>Tujuan Analisis</h2>
+<ul>
+<li>Mengevaluasi kinerja sistem absensi yang berjalan</li>
+<li>Mengidentifikasi kelemahan dan kendala sistem</li>
+<li>Memberikan rekomendasi perbaikan sistem</li>
+<li>Meningkatkan efisiensi pengelolaan data kehadiran pegawai</li>
+</ul>
+
+<h2>Metodologi</h2>
+<p>
+Analisis dilakukan menggunakan metode:
+</p>
+<ul>
+<li><strong>Observasi</strong> terhadap proses absensi pegawai</li>
+<li><strong>Wawancara</strong> dengan bagian administrasi dan kepegawaian</li>
+<li><strong>Analisis PIECES</strong> (Performance, Information, Economy, Control, Efficiency, Service)</li>
+<li>Pemodelan sistem menggunakan diagram UML</li>
+</ul>
+
+<h2>Analisis Sistem (Ringkasan)</h2>
+<p>
+Berdasarkan analisis PIECES diperoleh hasil sebagai berikut:
+</p>
+<ul>
+<li><strong>Performance:</strong> Sistem mempercepat pencatatan kehadiran dibandingkan manual.</li>
+<li><strong>Information:</strong> Data tersimpan terpusat dan lebih mudah diakses.</li>
+<li><strong>Efficiency:</strong> Mengurangi penggunaan kertas dan duplikasi data.</li>
+<li><strong>Control:</strong> Sistem memiliki kontrol akses berbasis login.</li>
+<li><strong>Service:</strong> Mempermudah pembuatan laporan bulanan.</li>
+</ul>
+
+<h2>Tanggung Jawab Saya</h2>
+<ul>
+<li>Menganalisis alur proses absensi pegawai</li>
+<li>Mengidentifikasi kebutuhan sistem</li>
+<li>Membuat dokumentasi analisis sistem</li>
+<li>Menyusun laporan PKL secara lengkap</li>
+<li>Menyusun rekomendasi pengembangan sistem</li>
+</ul>
+
+<h2>Hasil & Rekomendasi</h2>
+<p>
+Hasil analisis menunjukkan bahwa sistem absensi berbasis website 
+mampu meningkatkan efisiensi dan akurasi pencatatan kehadiran pegawai. 
+Namun, direkomendasikan pengembangan fitur seperti:
+</p>
+
+<ul>
+<li>Integrasi notifikasi kehadiran</li>
+<li>Peningkatan keamanan autentikasi</li>
+<li>Backup data otomatis</li>
+<li>Dashboard monitoring real-time untuk manajemen</li>
+</ul>
+
+<h2>Dampak Proyek</h2>
+<p>
+Proyek ini membantu pihak rumah sakit dalam memahami efektivitas 
+sistem absensi yang digunakan serta memberikan rekomendasi 
+strategis untuk pengembangan sistem ke depan.
+</p>
+
+<h2>Screenshot Sistem</h2>
+
+<div class="gallery">
+    <img src="images/RS-assyifa/login.jpg" alt="Halaman Login">
+    <img src="images/RS-assyifa/Beranda_rs.jpg" alt="Beranda Sistem">
+    <img src="images/RS-assyifa/absen_masuk.jpg" alt="Absen Masuk">
+    <img src="images/RS-assyifa/absen_pulang.jpg" alt="Absen Pulang">
+    <img src="images/RS-assyifa/absensi_harian.jpg" alt="Data Absensi Harian">
+    <img src="images/RS-assyifa/laporan_absensi.jpg" alt="Laporan Absensi">
+    <img src="images/RS-assyifa/laporan_absensi_perbulan.jpg" alt="Laporan Bulanan">
+</div>
+<!-- IMAGE MODAL -->
+<div id="imageModal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="modalImg">
+</div>
+</div>
+</section>
+<script>
+const modal = document.getElementById("imageModal");
+const modalImg = document.getElementById("modalImg");
+const closeBtn = document.querySelector(".close");
+
+document.querySelectorAll(".gallery img").forEach(img => {
+    img.addEventListener("click", function(){
+        modal.style.display = "block";
+        modalImg.src = this.src;
+    });
+});
+
+closeBtn.onclick = function() {
+    modal.style.display = "none";
+}
+
+modal.onclick = function(e) {
+    if(e.target === modal){
+        modal.style.display = "none";
+    }
+}
+</script>
+</body>
+</html>
