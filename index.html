@@ -77,8 +77,21 @@ h2{
     z-index: 2;
 }
 
-.hero-text {
-    flex: 1;
+.hero-text p {
+    max-width: 520px;
+    margin-bottom: 30px;
+    color: #e2e8f0;
+    line-height: 1.8;
+    text-align: justify;
+}
+
+.hero-text p {
+    max-width: 520px;
+    margin-bottom: 30px;
+    color: #e2e8f0;
+    line-height: 1.8;
+    text-align: justify;
+    hyphens: auto;
 }
 
 .hero-badge {
@@ -206,8 +219,14 @@ h2{
     color: #334155;
     line-height: 1.7;
     font-size: 15px;
+    text-align: justify;
+    hyphens: auto;
 }
-
+@media (max-width: 768px) {
+    .about-text {
+        padding: 0 5px;
+    }
+}
 .about-highlight {
     display: flex;
     justify-content: center;
@@ -259,7 +278,7 @@ h2{
 /* ================= SKILLS SECTION - PRO ================= */
 
 .skills-section {
-    padding: 60px 0;
+    padding: 60px 40;
     background: linear-gradient(135deg, #0f172a, #1e293b);
 }
 
@@ -352,6 +371,56 @@ h2{
     color:#0ea5e9;
 }
 
+/* ================= BUTTON PRO STYLE ================= */
+
+.btn {
+    display: inline-block;
+    padding: 8px 15px;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-decoration: none;
+    border-radius: 50px;
+    background: linear-gradient(135deg, #38bdf8, #2563eb);
+    color: #ffffff;
+    box-shadow: 0 8px 20px rgba(37, 99, 235, 0.35);
+    transition: all 0.35s ease;
+    position: relative;
+    overflow: hidden;
+}
+.project-card .btn {
+    margin-top: 20px; /* jarak tombol dari teks */
+}
+
+/* Hover Effect */
+.btn:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 15px 35px rgba(37, 99, 235, 0.5);
+    background: linear-gradient(135deg, #0ea5e9, #1d4ed8);
+}
+
+/* Click Effect */
+.btn:active {
+    transform: translateY(0px);
+    box-shadow: 0 6px 15px rgba(37, 99, 235, 0.3);
+}
+
+/* Optional Glow Animation */
+.btn::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -75%;
+    width: 50%;
+    height: 100%;
+    background: rgba(255,255,255,0.3);
+    transform: skewX(-25deg);
+    transition: 0.5s;
+}
+
+.btn:hover::after {
+    left: 125%;
+}
 /* ================= EDUCATION SECTION (PRO CLEAN) ================= */
 
 .education-section {
@@ -525,6 +594,20 @@ h2{
     box-shadow:0 10px 25px rgba(0,0,0,0.05);
     transition:0.3s ease;
 }
+/* ================= PROJECT TEXT ALIGN FIX ================= */
+
+.project-card h3{
+    text-align: left;
+    line-height: 1.5;
+    margin-bottom: 12px;
+}
+
+.project-card p{
+    text-align: justify;
+    line-height: 1.8;
+    hyphens: auto;
+    margin-bottom: 15px;
+}
 
 .project-card:hover{
     transform:translateY(-5px);
@@ -605,22 +688,22 @@ h2{
 
         <h1>Irgi Hikmah Romadan</h1>
 
-        <h2>Web Developer & Data Analyst</h2>
+        <h2>Intelligent Software Engineer | Web, Mobile & Predictive Analytics</h2>
 
         <p>
-            Mahasiswa semester akhir Sistem Informasi dengan fokus pada 
-            pengembangan sistem berbasis CodeIgniter 4, 
-            analisis data, serta pembangunan dashboard monitoring interaktif. 
-            Berpengalaman dalam riset Data Mining menggunakan Decision Tree 
-            dan pengembangan sistem informasi berbasis web.
+            Mahasiswa tingkat akhir Sistem Informasi yang berfokus pada integrasi Machine
+            Learning ke dalam ekosistem Web dan Mobile. Berpengalaman membangun
+            aplikasi dengan Flutter, CodeIgniter 4 dan Node.js, serta mengimplementasikan algoritma
+            Random Forest untuk analisis prediktif. Ahli dalam mengolah data kompleks menjadi
+            dashboard monitoring interaktif yang mendukung pengambilan keputusan berbasis
+            data (data-driven decision making).
         </p>
-
-        <div class="hero-buttons">
-            <a href="file:///D:/BERKAS%20LAMARAN/cv%20irgi%20(BBL).pdf" 
-               class="btn-primary" 
-               target="_blank">
-               Unduh CV
-            </a>
+            <div class="hero-buttons">
+                <a href="documents/cv_irgi_INDUSTRI.pdf" 
+                class="btn-primary" 
+                target="_blank">
+                Unduh CV
+                </a>
 
             <a href="#projects" class="btn-outline">
                Lihat Proyek
@@ -648,13 +731,13 @@ h2{
         <p>
         Saya adalah mahasiswa Sistem Informasi di 
         Universitas Bina Sarana Informatika (2022 – 2026) 
-        dengan fokus pada pengembangan sistem berbasis web 
+        dengan fokus pada pengembangan sistem berbasis Aplikasi 
         dan analisis data.
         </p>
 
         <p>
         Memiliki pengalaman membangun sistem informasi menggunakan 
-        CodeIgniter 4, merancang dashboard monitoring harga pangan 
+        CodeIgniter 4, Flutter, Node.js, Laravel merancang dashboard monitoring harga pangan 
         berbasis grafik interaktif, serta melakukan penelitian 
         klasifikasi data penjualan menggunakan metode Decision Tree.
         </p>
@@ -695,7 +778,7 @@ h2{
     <div class="skill-card skill-blue">
         <i class="fas fa-code"></i>
         <h4>Programming</h4>
-        <p>PHP, Python, JavaScript, SQL</p>
+        <p>PHP, Python, JavaScript, html,SQL</p>
     </div>
 
     <div class="skill-card skill-purple">
@@ -707,7 +790,7 @@ h2{
     <div class="skill-card skill-green">
         <i class="fas fa-database"></i>
         <h4>Database & Tools</h4>
-        <p>MySQL, Chart.js, AJAX</p>
+        <p>MySQL, Chart.js, PosgreSql</p>
     </div>
 
     <div class="skill-card skill-orange">
@@ -803,7 +886,7 @@ h2{
         Data Mining • Decision Tree (ID3) • RapidMiner • Business Intelligence
     </div>
 
-    <a href="file:///D:/UNIVERSITAS%20BINA%20SARANA%20INFORMATIKA/PROSES%20SEMESTER%20VI/Data%20warehouse%20bisnis/Referensi%20Tugas/yang%20dipakai/ANALISIS%20DATA%20TOYOTA%20SUKABUMI_FINAL.pdf" 
+    <a href="documents/ANALISIS_DATA_TOYOTA _SUKABUMI_FINAL.pdf" 
        class="btn" 
        target="_blank">
         Lihat / Unduh Jurnal
@@ -860,11 +943,11 @@ h2{
         </div>
     </a>
 
-    <a href="https://linkedin.com/in/irgihikmahromadan" target="_blank" class="contact-card">
+    <a href="https://www.linkedin.com/in/irgi-hikmah-romadan-057687375?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="contact-card">
         <i class="fab fa-linkedin"></i>
         <div>
             <h4>LinkedIn</h4>
-            <p>linkedin.com/in/irgihikmahromadan</p>
+            <p>irgi hikmah romadan</p>
         </div>
     </a>
 
