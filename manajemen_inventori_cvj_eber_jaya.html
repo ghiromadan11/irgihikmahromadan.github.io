@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Detail Proyek - Sistem Informasi Manajemen Inventori CV Jeber Jaya</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Inter',sans-serif;
+}
+body{
+    background:#f8fafc;
+    color:#1e293b;
+    line-height:1.8;
+}
+
+/* CONTAINER */
+.container{
+    width:90%;
+    max-width:950px;
+    margin:auto;
+}
+
+/* SECTIONS */
+section{
+    padding:70px 0;
+    border-radius:12px;
+    margin-bottom:40px;
+    background: linear-gradient(145deg, #ffffff, #f1f5f9);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+section:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.08);
+}
+
+/* HEADINGS */
+h1{
+    font-size:36px;
+    margin-bottom:20px;
+    color:#1e3a8a;
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+h2{
+    margin:35px 0 15px 0;
+    font-size:24px;
+    color:#0f172a;
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+h1::before, h2::before{
+    content:"🔹";
+}
+
+/* MOBILE ADJUST H1 & H2 */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 20px;
+        line-height: 1.3;
+        margin-bottom: 15px;
+    }
+    h2 {
+        font-size: 16px;
+        margin-bottom: 12px;
+    }
+}
+
+/* PARAGRAPH & LIST */
+p{
+    margin-bottom:18px;
+    color:#475569;
+    text-align: justify;
+    hyphens: auto;
+}
+ul{
+    padding-left:25px;
+    color:#475569;
+}
+li{
+    margin-bottom:10px;
+}
+
+/* BACK BUTTON */
+.back-btn{
+    display:inline-block;
+    margin-bottom:35px;
+    padding:12px 25px;
+    background: linear-gradient(90deg,#0ea5e9,#0284c7);
+    color:white;
+    border-radius:10px;
+    text-decoration:none;
+    font-weight:600;
+    transition:0.3s;
+}
+.back-btn:hover{
+    background: linear-gradient(90deg,#0284c7,#0ea5e9);
+    transform: scale(1.05);
+}
+
+/* INFO BOX */
+.info-box{
+    background:#ffffff;
+    padding:30px 25px;
+    border-radius:16px;
+    margin:25px 0 35px 0;
+    box-shadow:0 12px 28px rgba(0,0,0,0.06);
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:20px;
+}
+.info-item strong{
+    display:block;
+    font-size:15px;
+    color:#64748b;
+    margin-bottom:6px;
+}
+.info-item span{
+    font-weight:600;
+    color:#1e293b;
+}
+
+/* GALLERY */
+.gallery{
+    margin-top:20px;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+.gallery img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+    border-radius:16px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.08);
+    transition:0.4s ease;
+    cursor:pointer;
+}
+.gallery img:hover{
+    transform: scale(1.06);
+    box-shadow:0 15px 35px rgba(0,0,0,0.12);
+}
+
+/* MODAL */
+.modal{
+    display:none;
+    position:fixed;
+    z-index:999;
+    padding-top:60px;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+    background-color:rgba(0,0,0,0.85);
+}
+.modal-content{
+    display:block;
+    margin:auto;
+    max-width:80%;
+    max-height:80vh;
+    border-radius:14px;
+    animation:zoom 0.4s ease;
+}
+@keyframes zoom{
+    from{transform:scale(0.7);}
+    to{transform:scale(1);}
+}
+.close{
+    position:absolute;
+    top:30px;
+    right:40px;
+    color:#fff;
+    font-size:38px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:0.3s;
+}
+.close:hover{
+    color:#f87171;
+}
+</style>
+</head>
+<body>
+
+<!-- SECTION: HEADER -->
+<section>
+<div class="container">
+<a href="index.html" class="back-btn">← Kembali ke Portofolio</a>
+<h1>Sistem Informasi Manajemen Inventori Produk Jadi — CV Jeber Jaya</h1>
+
+<div class="info-box">
+    <div class="info-item">
+        <strong>Peran</strong>
+        <span>Fullstack Web Developer</span>
+    </div>
+    <div class="info-item">
+        <strong>Teknologi</strong>
+        <span>Node.js, Express.js, EJS, MySQL, Bootstrap 5, Chart.js, Puppeteer</span>
+    </div>
+    <div class="info-item">
+        <strong>Tahun</strong>
+        <span>2026</span>
+    </div>
+    <div class="info-item">
+        <strong>Kategori</strong>
+        <span>Tugas Akhir / Skripsi (Manufaktur & Logistik)</span>
+    </div>
+</div>
+</div>
+</section>
+
+<!-- SECTION: DESKRIPSI -->
+<section>
+<div class="container">
+<h2>Deskripsi Proyek</h2>
+<p>Proyek ini merupakan sistem informasi manajemen inventori produk jadi berbasis web yang dikembangkan menggunakan metode <strong>Prototype</strong> untuk CV Jeber Jaya (Sukabumi), produsen makanan ringan dengan ±10 varian produk. Sistem ini dirancang untuk mendigitalisasi proses pencatatan manual berbasis buku, mengeliminasi risiko ketidaksesuaian data stok, mengurangi potensi barang kedaluwarsa (retur berulang pada masa simpan 3 bulan), serta memberikan transparansi dalam pemantauan tren distribusi penjualan. Aplikasi difokuskan khusus pada pengelolaan produk jadi, barang masuk, keluar, retur, serta penetapan batas minimum stok.</p>
+</div>
+</section>
+
+<!-- SECTION: FITUR UTAMA -->
+<section>
+<div class="container">
+<h2>Fitur Utama</h2>
+<ul>
+<li><strong>Manajemen Transaksi & Sinkronisasi Stok:</strong> Pencatatan produk masuk, keluar, dan retur yang terintegrasi secara otomatis ke akumulasi stok produk melalui aksi simpan terverifikasi.</li>
+<li><strong>Monitoring Kedaluwarsa Metode FEFO:</strong> Penghitungan otomatis sisa hari menuju <em>expired date</em> dengan penerapan prinsip <em>First Expired First Out</em> (FEFO) untuk mencegah kerugian produk kadaluarsa.</li>
+<li><strong>Dashboard Visual & Analisis Tren:</strong> Visualisasi statistik harian, analisis tren distribusi 14 hari, dan grafik pergerakan bulanan berbasis Chart.js.</li>
+<li><strong>Export Laporan PDF Otomatis:</strong> Fitur rekapitulasi data dan pembuatan laporan dalam format PDF yang di-generate menggunakan Puppeteer.</li>
+<li><strong>Otorisasi Dua Peran (Admin & Pimpinan):</strong> Pengaturan hak akses di mana Admin mengelola penuh transaksi (CRUD), sementara Pimpinan memiliki akses <em>Read-Only</em> untuk pengawasan dan analisis.</li>
+<li><strong>Sistem Audit Log & Reset Password:</strong> Fitur pemulihan kata sandi via email (Nodemailer) serta pencatatan log riwayat aktivitas transaksi yang terlindungi dengan aturan validasi retensi 3 bulan.</li>
+</ul>
+</div>
+</section>
+
+<!-- SECTION: TANGGUNG JAWAB -->
+<section>
+<div class="container">
+<h2>Tanggung Jawab Saya</h2>
+<ul>
+<li>Mengidentifikasi masalah dan kebutuhan operasional CV Jeber Jaya melalui tahapan wawancara dan observasi langsung.</li>
+<li>Merancang skema basis data relasional (ERD & LRS) yang menghubungkan entitas transaksi, batasan stok, dan tabel audit log.</li>
+<li>Mengembangkan backend server berbasis Node.js dan Express.js serta mengimplementasikan logika akumulasi stok dan metode FEFO.</li>
+<li>Membangun antarmuka dinamis dan responsif menggunakan EJS (*template engine*) dan Bootstrap 5.</li>
+<li>Mengintegrasikan library pendukung seperti Nodemailer (email reset password), Chart.js (grafik), dan Puppeteer (export PDF).</li>
+<li>Melakukan pengujian sistem secara menyeluruh menggunakan metode <em>Black Box Testing</em>.</li>
+</ul>
+</div>
+</section>
+
+<!-- SECTION: HASIL & DAMPAK -->
+<section>
+<div class="container">
+<h2>Hasil & Dampak</h2>
+<p>Implementasi sistem berbasis web ini berhasil menggantikan pencatatan manual di CV Jeber Jaya, meningkatkan akurasi data stok secara real-time, dan meminimalisir potensi kerugian akibat barang kedaluwarsa melalui pengawasan FEFO. 
+    Selain itu, integrasi grafik tren dan sistem cetak PDF mempermudah Pimpinan dalam memantau distribusi produk serta mengambil keputusan operasional secara cepat dan tepat. 
+    Seluruh pengujian fungsionalitas aplikasi terbukti berjalan valid.</p>
+</div>
+</section>
+
+<!-- SECTION: GALLERY -->
+<section>
+<div class="container">
+<h2>Screenshot Sistem</h2>
+<p style="font-size:14px; margin-bottom:15px; color:#64748b;">*Klik gambar untuk memperbesar*</p>
+<div class="gallery">
+    <img src="images/cv_jeber_jaya/login.png" alt="halaman login">
+    <img src="images/cv_jeber_jaya/dashboard.png" alt="Dashboard Utama Inventori">
+    <img src="images/cv_jeber_jaya/dashboard1.png" alt="Dashboard Utama Inventori">
+    <img src="images/cv_jeber_jaya/dashboard2.png" alt="Dashboard Utama Inventori">
+    <img src="images/cv_jeber_jaya/batas_stok.png" alt="batas stok">
+    <img src="images/cv_jeber_jaya/stok_produk.png" alt="stok produk">
+    <img src="images/cv_jeber_jaya/produk_masuk.png" alt="produk masuk">
+    <img src="images/cv_jeber_jaya/produk_keluar.png" alt="produk keluar">
+    <img src="images/cv_jeber_jaya/produk_retur.png" alt="produk retur">
+    <img src="images/cv_jeber_jaya/monitoring_distribusi.png" alt="Distribusi">
+    <img src="images/cv_jeber_jaya/lmonitoring_distribusi1.png" alt="Distribusi">
+    <img src="images/cv_jeber_jaya/monitoring_kadaluarsa.png" alt="kadaluarsa">
+    <img src="images/cv_jeber_jaya/monitoring_kadaluarsa1.png" alt="kadaluarsa">
+    <img src="images/cv_jeber_jaya/pengaturan.png" alt="pengaturan">
+    <img src="images/cv_jeber_jaya/ubah_username.png" alt="username">
+    <img src="images/cv_jeber_jaya/ubah_pasword.png" alt="psword">
+    <img src="images/cv_jeber_jaya/ubah_email.png" alt="email">
+    <img src="images/cv_jeber_jaya/reset_pasword.png" alt="reset">
+</div>
+<div id="imageModal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="modalImg">
+</div>
+</div>
+</section>
+
+<script>
+const modal = document.getElementById("imageModal");
+const modalImg = document.getElementById("modalImg");
+const closeBtn = document.querySelector(".close");
+
+document.querySelectorAll(".gallery img").forEach(img => {
+    img.addEventListener("click", function(){
+        modal.style.display = "block";
+        modalImg.src = this.src;
+    });
+});
+
+closeBtn.onclick = function() {
+    modal.style.display = "none";
+}
+
+modal.onclick = function(e) {
+    if(e.target === modal){
+        modal.style.display = "none";
+    }
+}
+</script>
+
+</body>
+</html>
